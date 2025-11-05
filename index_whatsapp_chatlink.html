@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clube Exclusivo de Ofertas – Legal Prime</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00ff95, #00b3ff);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      padding: 30px 20px;
+      margin: 20px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    img.logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    button {
+      background-color: #25d366;
+      color: #000;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      padding: 12px;
+      width: 100%;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #1ebe5b;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .btn-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      font-size: 30px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    small {
+      font-size: 0.8rem;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="Logo Legal PNG (1).png" alt="Logo Legal Prime" class="logo" />
+    <h1>💥 Clube Exclusivo de Ofertas</h1>
+    <p>Receba promoções relâmpago e ofertas exclusivas da Legal Prime direto no seu WhatsApp. Faça parte agora!</p>
+
+    <form id="form">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="tel" id="telefone" placeholder="Seu telefone" required />
+      <button type="submit">Quero Participar 🚀</button>
+    </form>
+
+    <a id="link" class="hidden" href="https://chat.whatsapp.com/J1CwaxDN0FGHdjPfAvB68g" target="_blank" rel="noopener noreferrer">
+      <button>Entrar no Grupo do WhatsApp 🔥</button>
+    </a>
+
+    <small>Seus dados não serão compartilhados.</small>
+  </div>
+
+  <a class="btn-whatsapp" href="https://chat.whatsapp.com/J1CwaxDN0FGHdjPfAvB68g" target="_blank" rel="noopener noreferrer">💬</a>
+
+  <script>
+    const form = document.getElementById('form');
+    const link = document.getElementById('link');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.classList.add('hidden');
+      link.classList.remove('hidden');
+      // optional: scroll to button
+      link.scrollIntoView({behavior: 'smooth'});
+    });
+  </script>
+</body>
+</html>
