@@ -122,14 +122,14 @@
       <button type="submit">Quero Participar 🚀</button>
     </form>
 
-    <a id="link" class="hidden" href="intent://chat.whatsapp.com/J1CwaxDN0FGHdjPfAvB68g#Intent;package=com.whatsapp;scheme=https;end" target="_blank">
-  <button>Entrar no Grupo do WhatsApp 🔥</button>
+    <a id="link" class="hidden" href="https://chat.whatsapp.com/J1CwaxDN0FGHdjPfAvB68g" target="_blank" rel="noopener noreferrer">
+      <button>Entrar no Grupo do WhatsApp 🔥</button>
     </a>
 
     <small>Seus dados não serão compartilhados.</small>
   </div>
 
-  <a class="btn-whatsapp" href="intent://chat.whatsapp.com/J1CwaxDN0FGHdjPfAvB68g#Intent;package=com.whatsapp;scheme=https;end" target="_blank">💬</a>
+  <a class="btn-whatsapp" href="https://chat.whatsapp.com/J1CwaxDN0FGHdjPfAvB68g" target="_blank" rel="noopener noreferrer">💬</a>
 
   <script>
     const form = document.getElementById('form');
@@ -139,6 +139,8 @@
       e.preventDefault();
       form.classList.add('hidden');
       link.classList.remove('hidden');
+      // optional: scroll to button
+      link.scrollIntoView({behavior: 'smooth'});
     });
   </script>
 </body>
